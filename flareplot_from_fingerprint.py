@@ -253,17 +253,3 @@ def generate_flareplot_from_fingerprint(fingerprint_path, threshold=0.5, width=5
     # Return the HTML object for display in the notebook
     return HTML(flareplot_html)
 
-# Path to your fingerprint.pkl file
-fingerprint_path = r"C:\Users\heiringr\Desktop\fingerprint.pkl"
-
-# Generate and display the flareplot
-flareplot = generate_flareplot_from_fingerprint(
-    fingerprint_path, 
-    threshold=0.5,  # Optional: adjust threshold for filtering interactions
-    width=600,      # Optional: adjust width
-    height=600      # Optional: adjust height
-)
-
-# Display the flareplot in the notebook
-display(flareplot)
-
